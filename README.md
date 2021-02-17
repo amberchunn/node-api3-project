@@ -27,9 +27,9 @@ There are two possible ways to submit your project. Your instructor should have 
 
 [x] Wire the application together completing `api/server.js` and `index.js`.
 [x] Write four custom middleware functions detailed below, in `api/middleware/middleware.js`.
-[-] Complete the endpoints inside `api/posts/posts-router.js` and `api/users/users-router.js`.
-[-] Use the custom middlewares in their appropriate places in the application (specific endpoints, entire routes or globally).
-[-] There are endpoints in `users-router.js` to retrieve the list of `posts` by a `user` and to store a new `post` for a `user`.
+[x] Complete the endpoints inside `api/posts/posts-router.js` and `api/users/users-router.js`.
+[x] Use the custom middlewares in their appropriate places in the application (specific endpoints, entire routes or globally).
+[x] There are endpoints in `users-router.js` to retrieve the list of `posts` by a `user` and to store a new `post` for a `user`.
 
 #### Custom Middleware Requirements
 

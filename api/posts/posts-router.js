@@ -3,7 +3,7 @@ const posts = require('./posts-model');
 
 const router = express.Router();
 
-router.get('/api/posts', (req, res, next) => {
+router.get('/posts', (req, res, next) => {
   // DO YOUR MAGIC
   posts.get()
     .then((posts) => {
@@ -14,7 +14,7 @@ router.get('/api/posts', (req, res, next) => {
     })
 });
 
-router.get('/api/posts/:id', (req, res, next) => {
+router.get('/posts/:id', (req, res, next) => {
   // DO YOUR MAGIC
   posts.getById(req.params.id)
     .then((post) => {
