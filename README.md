@@ -18,39 +18,39 @@ There are two possible ways to submit your project. Your instructor should have 
 
 #### Option B - Pull Request
 
-- [ ] Fork and clone the repository.
-- [ ] Implement your project in a `firstname-lastname` branch.
-- [ ] Create a pull request of `firstname-lastname` against your `main` branch.
-- [ ] Open the assignment in Canvas and submit your pull request.
+- [x] Fork and clone the repository.
+- [x] Implement your project in a `firstname-lastname` branch.
+- [x] Create a pull request of `firstname-lastname` against your `main` branch.
+- [x] Open the assignment in Canvas and submit your pull request.
 
 ### Task 2: Minimum Viable Product
 
-- Wire the application together completing `api/server.js` and `index.js`.
-- Write four custom middleware functions detailed below, in `api/middleware/middleware.js`.
-- Complete the endpoints inside `api/posts/posts-router.js` and `api/users/users-router.js`.
-- Use the custom middlewares in their appropriate places in the application (specific endpoints, entire routes or globally).
-- There are endpoints in `users-router.js` to retrieve the list of `posts` by a `user` and to store a new `post` for a `user`.
+[x] Wire the application together completing `api/server.js` and `index.js`.
+[x] Write four custom middleware functions detailed below, in `api/middleware/middleware.js`.
+[x] Complete the endpoints inside `api/posts/posts-router.js` and `api/users/users-router.js`.
+[x] Use the custom middlewares in their appropriate places in the application (specific endpoints, entire routes or globally).
+[x] There are endpoints in `users-router.js` to retrieve the list of `posts` by a `user` and to store a new `post` for a `user`.
 
 #### Custom Middleware Requirements
 
-- `logger()`
+[x] `logger()`
 
   - `logger` logs to the console the following information about each request: request method, request url, and a timestamp
   - this middleware runs on every request made to the API
 
-- `validateUserId()`
+[x] `validateUserId()`
 
   - this middleware will be used for all user endpoints that include an `id` parameter in the url (ex: `/api/users/:id` and it should check the database to make sure there is a user with that id.
   - if the `id` parameter is valid, store the user object as `req.user` and allow the request to continue
   - if the `id` parameter does not match any user id in the database, respond with status `404` and `{ message: "user not found" }`
 
-- `validateUser()`
+[x] `validateUser()`
 
   - `validateUser` validates the `body` on a request to create or update a user
   - if the request `body` is missing, respond with status `400` and `{ message: "missing user data" }`
   - if the request `body` lacks the required `name` field, respond with status `400` and `{ message: "missing required name field" }`
 
-- `validatePost()`
+[x] `validatePost()`
 
   - `validatePost` validates the `body` on a request to create a new post
   - if the request `body` is missing, respond with status `400` and `{ message: "missing post data" }`
@@ -102,7 +102,7 @@ We have provided test data for the resources.
 ### Task 3: Stretch Goals
 
 - Create a React App
-  - Use `create-react-app` to create an application inside the root folder, name it `client`.
+  [x] Use `create-react-app` to create an application inside the root folder, name it `client`.
   - From the React application connect to the `/api/users` endpoint in the API and show the list of users.
   - Add functionality to show the details of a user, including their posts, when clicking a user name in the list. Use React Router to navigate to a `/users/:id` route to show the user details.
   - Add styling!
